@@ -1,42 +1,53 @@
-.about-intro {
-   
-  font-family: Arial, Helvetica, sans-serif;
-  
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.intro {
+  max-width: 800px;
+  margin: 80px auto 0;
+  padding: 0 24px;
+  text-align: center;
 }
 
 .title {
-  margin-top: 40px;
-  text-align: center;
+  margin: 0;
   font-size: larger;
-  color: #EF3340;
+  font-weight: 700 ;
+  color: gold;
 }
 .description{
-  
-  font-size: medium;
-  display: inline-block;
+  margin-top: 30px;
+  font-size: 1.05rem;
+  line-height: 2;
+  color: black;
+}
+
+.description p {
+  margin-bottom: 20px;
 }
 
 .button-container{
   text-align: center;
-  margin-top: 50px;
-  display: block;
+  margin-top: 80px;
 }
 
 .generate-button {
-  padding: 30px 65px;
-  border: 1.5px solid black;
-  border-radius: 20px;
+  display: inline-block;
+  padding: 20px 60px;
+  border: 1px solid gold;
+  border-radius: 1000px;
   font-size: larger;
   font-weight: 600;
   text-align: center;
   text-decoration: none;
-  background-color: #FFD100;
-  color: black;
-  cursor: pointer;
+  background-color: transparent;
+  color: gold;
+  transition-duration: 0.2s;
 }
 
-.akan-button:hover {
-  background-color: white;
+.generate-button:hover {
+  background-color: gold;
+  color: black;
   transform: scale(1.05);
   transition: 0.2s;
 }
