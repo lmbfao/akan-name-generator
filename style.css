@@ -12,6 +12,8 @@
 }
 .description{
   margin-top: 50px;
+  font-size: medium;
+  
 }
 
 .akan-button {
@@ -20,8 +22,8 @@
   display: inline-block;
   padding: 20px 40px;
   border: 1.5px solid black;
-  border-radius: 2px;
-  font-size: large;
+  border-radius: 20px;
+  font-size: larger;
   font-weight: 600;
   text-align: center;
   text-decoration: none;
