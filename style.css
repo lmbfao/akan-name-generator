@@ -11,16 +11,19 @@
   color: #EF3340;
 }
 .description{
-  margin-top: 50px;
-  font-size: medium;
   
+  font-size: medium;
+  display: inline-block;
 }
 
-.akan-button {
-  align-content: center;
+.button-container{
+  text-align: center;
   margin-top: 50px;
-  display: inline-block;
-  padding: 20px 40px;
+  display: block;
+}
+
+.generate-button {
+  padding: 30px 65px;
   border: 1.5px solid black;
   border-radius: 20px;
   font-size: larger;
@@ -30,4 +33,10 @@
   background-color: #FFD100;
   color: black;
   cursor: pointer;
+}
+
+.akan-button:hover {
+  background-color: white;
+  transform: scale(1.05);
+  transition: 0.2s;
 }
