@@ -1,5 +1,8 @@
-body{
+/*index.html*/
+
+.about-intro{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
 }
 
 .intro {
@@ -11,9 +14,7 @@ body{
 
 .title {
   margin: 0;
-  font-size: larger;
-  font-weight: 700 ;
-  color: gold;
+  color: #FFD100;
 }
 
 #star {
@@ -24,7 +25,7 @@ body{
   margin-top: 30px;
   font-size: 1.05rem;
   line-height: 2;
-  color: black;
+  color: white;
 }
 
 .description p {
@@ -39,20 +40,23 @@ body{
 .generate-button {
   display: inline-block;
   padding: 20px 60px;
-  border: 1px solid gold;
+  border: 1px solid #FFD100;
   border-radius: 1000px;
   font-size: larger;
   font-weight: 600;
   text-align: center;
   text-decoration: none;
   background-color: transparent;
-  color: gold;
+  color: #FFD100;
   transition-duration: 0.2s;
 }
 
 .generate-button:hover {
-  background-color: gold;
+  background-color: #FFD100;
   color: black;
   transform: scale(1.05);
   transition: 0.2s;
 }
+
+
+/*generator.html*/
