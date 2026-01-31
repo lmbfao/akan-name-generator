@@ -15,6 +15,11 @@ body{
   font-weight: 700 ;
   color: gold;
 }
+
+#star {
+  font-size: x-large;
+}
+
 .description{
   margin-top: 30px;
   font-size: 1.05rem;
