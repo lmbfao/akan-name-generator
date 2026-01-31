@@ -1,0 +1,31 @@
+.about-intro {
+   
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.title {
+  margin-top: 40px;
+  text-align: center;
+  font-size: larger;
+  color: #EF3340;
+}
+.description{
+  margin-top: 50px;
+}
+
+.akan-button {
+  align-content: center;
+  margin-top: 50px;
+  display: inline-block;
+  padding: 20px 40px;
+  border: 1.5px solid black;
+  border-radius: 2px;
+  font-size: large;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  background-color: #FFD100;
+  color: black;
+  cursor: pointer;
+}
