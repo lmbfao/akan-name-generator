@@ -10,6 +10,7 @@ In Akan culture, commonly found in Ghana, children are traditionally named accor
 
 ## Contact Information
 **GitHub:** https://github.com/lmbfao
+
 **Mailto:** christinewangechik@gmail.com
 
 ## Live Site
