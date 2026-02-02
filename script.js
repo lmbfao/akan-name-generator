@@ -7,9 +7,9 @@
   //mod is the modulus operator %//
 
 //arrays//
-const days = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"]
-const maleNames = ["kwasi","kwadwo","kwabena","kwaku","yaw","kofi","kwame"]
-const femaleNames = ["akosua","adwoa","abenaa","akua","yaa","afua","ama"]
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
 //functions//
 function isLeapYear(year) {
@@ -73,10 +73,14 @@ let YY = year % 100;
 let MM = month;
 const DD = day;
 
-if (MM < 3) {
-  MM += 12;
-  YY -= 1;
-}
+  if (MM < 3) {
+    MM += 12;
+    YY -= 1;
+  if (YY < 0) {
+    YY += 100;
+    CC -= 1;
+   }
+  }
 
 //result//
 const dayIndex = calculateDay(CC, YY, MM, DD);
@@ -90,7 +94,9 @@ function calculateDay(CC, YY, MM, DD) {
    const term3 = Math.floor((26 * (MM + 1))/10);
 
    let d= (term1 + term2 + term3 + DD) % 7;
-    return d < 0 ? d + 7: d;
+    if (d < 0) {
+      d += 7;
+    return d;
   }
 
   //result//
