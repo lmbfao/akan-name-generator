@@ -1,7 +1,11 @@
+/*Common*/
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /*index.html*/
 
 .about-intro{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: black;
 }
 
@@ -15,58 +19,106 @@
 .title {
   margin: 0;
   color: #FFD100;
+  letter-spacing: 4px;
+  font-size: 2.5rem;
 }
 
 #star {
   font-size: x-large;
+  color: #FFD100;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
 }
 
 .description{
   margin-top: 30px;
   font-size: 1.05rem;
   line-height: 2;
-  color: white;
+  text-align: center;
+  color: #e6e6e6;
 }
 
 .description p {
   margin-bottom: 20px;
+  line-height: 1.7;
 }
 
-.button-container{
+.get-button-container{
   text-align: center;
   margin-top: 80px;
 }
 
-.generate-button {
+.get-button {
   display: inline-block;
-  padding: 20px 60px;
-  border: 1px solid #FFD100;
+  padding: 15px 50px;
+  border: 1.5px solid #FFD100;
   border-radius: 1000px;
-  font-size: larger;
+  font-size: 1rem;
   font-weight: 600;
   text-align: center;
   text-decoration: none;
   background-color: transparent;
   color: #FFD100;
-  transition-duration: 0.2s;
+  transition: 0.2s;
 }
 
-.generate-button:hover {
+.get-button:hover {
   background-color: #FFD100;
   color: black;
   transform: scale(1.05);
-  transition: 0.2s;
+  box-shadow: 0 0 20px #ffd10099;
 }
 
 
 /*generator.html*/
-
-.generator-container {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.generator-card {
+  background: black;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  background-color: black;
-  color: #F5F5F5;
+  justify-content: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #FFD100;
+  letter-spacing: 2px;
+}
+
+.generator-container { 
+  background: rgba(10, 10, 10, 0.9); 
+  width: 40%;
+  padding: 2.5rem;
+  border: 1px solid rgba(0, 151, 20, 0.122);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.home-button-container{
+  text-align: center;
+  margin-top: 80px;
+}
+
+.home-button {
+  display: inline-block;
+  padding: 15px 40px;
+  border: 1px solid #FFD100;
+  border-radius: 1000px;
+  font-size: medium;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: none;
+  background-color: transparent;
+  color: #FFD100;
+}
+
+.home-button:hover {
+  background-color: #FFD100;
+  color: black;
+  transform: scale(1.05);
+  transition: 0.2s;
 }

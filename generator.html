@@ -7,16 +7,17 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="generator-container">
-  
-  <section class="generator-card">
-    <h2>Generate Your Akan Name</h2>
+<body class="generator-card">
+   <h1>Generate Your Akan Name!</h1>
+
+  <section class="generator-container">
     
     <input type="number" placeholder="day" id="day" min="1" max="31" required>
     <input type="number" placeholder="month" id="month" min="1" max="12" required>
     <input type="number" placeholder="year" id="year" min="1900" max="2026" required>
 
     <select name="Select gender" id="gender" required>
+      <option value="">Select gender</option>
       <option value="male">Male</option>
       <option value="female">Female</option>
     </select>
@@ -25,6 +26,11 @@
 
   </section>
 <footer id="result"></footer>
+
+<div class="home-button-container">
+  <a class="home-button" href="index.html">GO BACK TO HOME PAGE</a>
+</div>
+
   <script src="script.js"></script>
 </body>
 </html>
