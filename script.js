@@ -1,11 +1,3 @@
-//CALCULATION FORMULA FOR DAY OF THE WEEK//
-//d=((4CC​−2×CC−1)+(45×YY​)+(1026×(MM+1)​)+DD)mod7//
-  //CC is the first two digits of the year//
-  //YY is the last two digits of the year//
-  //MM is the month//
-  //DD is the day of the month//
-  //mod is the modulus operator %//
-
 //arrays//
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
@@ -83,11 +75,18 @@ const dayIndex = calculateDay(CC, YY, MM, DD);
 const dayOfWeek = days[dayIndex];
 const akanName = gender === "male" ? maleNames[dayIndex] : femaleNames[dayIndex];
 
-//calculation//
+//CALCULATION FORMULA FOR DAY OF THE WEEK//
+  //CC is the first two digits of the year//
+  //YY is the last two digits of the year//
+  //MM is the month//
+  //DD is the day of the month//
+  //mod is the modulus operator %//
+  //d=( ((cc/4)-2*cc-1)+ ((5*yy)/4) + ((26*(mm+1))/10) + dd) mod 7 //
+  
 function calculateDay(CC, YY, MM, DD) {
-   const term1 = Math.floor (((4 * CC) - 2) * CC - 1);
-   const term2 = Math.floor(20 * YY);
-   const term3 = Math.floor(2.6 * (MM + 1));
+   const term1 = Math.floor((CC/4)-2*CC-1);
+   const term2 = Math.floor((5*YY)/4) ;
+   const term3 = Math.floor((26*(MM+1))/10);
    let d= ((term1 + term2 + term3 + DD) % 7);
     if (d < 0) {
       d += 7;
@@ -107,8 +106,14 @@ function calculateDay(CC, YY, MM, DD) {
   </div> `;
 }
 
+//Clear form//
+  document.getElementById("day").value = "";
+  document.getElementById("month").value = "";
+  document.getElementById("year").value = "";
+  document.getElementById("gender").value = "";
+
   //event listeners//
-document.addEventListener('DOMContentLoaded', function() {
+ document.addEventListener('DOMContentLoaded', function() {
   const generateBtn = document.getElementById('generate');
   if (generateBtn) {
     generateBtn.addEventListener('click', getAkanName);
