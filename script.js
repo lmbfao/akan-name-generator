@@ -76,10 +76,6 @@ const DD = day;
   if (MM < 3) {
     MM += 12;
     YY -= 1;
-  if (YY < 0) {
-    YY += 100;
-    CC -= 1;
-   }
   }
 
 //result//
@@ -89,13 +85,13 @@ const akanName = gender === "male" ? maleNames[dayIndex] : femaleNames[dayIndex]
 
 //calculation//
 function calculateDay(CC, YY, MM, DD) {
-   const term1 = Math.floor((CC/4) - 2 * (CC - 1));
-   const term2 = Math.floor((5 * YY)/4);
-   const term3 = Math.floor((26 * (MM + 1))/10);
-
-   let d= (term1 + term2 + term3 + DD) % 7;
+   const term1 = Math.floor (((4 * CC) - 2) * CC - 1);
+   const term2 = Math.floor(20 * YY);
+   const term3 = Math.floor(2.6 * (MM + 1));
+   let d= ((term1 + term2 + term3 + DD) % 7);
     if (d < 0) {
       d += 7;
+    }
     return d;
   }
 
@@ -112,18 +108,18 @@ function calculateDay(CC, YY, MM, DD) {
 }
 
   //event listeners//
- document.addEventListener('DOMContentLoaded', function() {
-    const generateBtn = document.getElementById('generate');
-    if (generateBtn) {
-        generateBtn.addEventListener('click', getAkanName);
-    }
+document.addEventListener('DOMContentLoaded', function() {
+  const generateBtn = document.getElementById('generate');
+  if (generateBtn) {
+    generateBtn.addEventListener('click', getAkanName);
+}
     
-    const inputs = document.querySelectorAll('input, select');
-    inputs.forEach(input => {
-        input.addEventListener('keypress', function(event) {
-            if (event.key === 'Enter') {
-                getAkanName();
-            }
-        });
+  const inputs = document.querySelectorAll('input, select');
+  inputs.forEach(input => {
+    input.addEventListener('keypress', function(event) {
+      if (event.key === 'Enter') {
+        getAkanName();
+      }
     });
+  });
 });
