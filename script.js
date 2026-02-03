@@ -60,6 +60,11 @@ function getAkanName(){
   }
 
 
+  //CC is the first two digits of the year//
+  //YY is the last two digits of the year//
+  //MM is the month//
+  //DD is the day of the month//
+
 const CC = Math.floor(year / 100);
 let YY = year % 100;
 let MM = month;
@@ -76,12 +81,7 @@ const dayOfWeek = days[dayIndex];
 const akanName = gender === "male" ? maleNames[dayIndex] : femaleNames[dayIndex];
 
 //CALCULATION FORMULA FOR DAY OF THE WEEK//
-  //CC is the first two digits of the year//
-  //YY is the last two digits of the year//
-  //MM is the month//
-  //DD is the day of the month//
-  //mod is the modulus operator %//
-  //d=( ((cc/4)-2*cc-1)+ ((5*yy)/4) + ((26*(mm+1))/10) + dd) mod 7 //
+  //d=( ((cc/4)-2*cc-1)+ ((5*yy)/4) + ((26*(mm+1))/10) + dd) mod 7 // mod is the modulus operator %//
   
 function calculateDay(CC, YY, MM, DD) {
    const term1 = Math.floor((CC/4)-2*CC-1);
@@ -98,7 +98,7 @@ function calculateDay(CC, YY, MM, DD) {
   document.getElementById('result').innerHTML = 
   ` <div class="result-card">
     <h2>Your Akan Identity</h2>
-      <span class="akan-name">${akanName}</span>
+      <span class="akan-name">Your Akan name is ${akanName}</span>
       <p>Born on <strong>${dayOfWeek}</strong></p>
       <p>Date: ${day}/${month}/${year}</p>
       <p>Gender: ${gender === "male" ? "Male" : "Female"}</p>
