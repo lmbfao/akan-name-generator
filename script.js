@@ -95,6 +95,8 @@ function calculateDay(CC, YY, MM, DD) {
   }
 
   //result//
+  result.textContent = akanName;
+ result.style.display = "block";
   document.getElementById('result').innerHTML = 
   ` <div class="result-card">
     <h2>Your Akan Identity</h2>
