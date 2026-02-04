@@ -72,14 +72,17 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 /*generator.html*/
 .generator-card {
-  background: black;
-  color: rgb(103, 91, 9);
+  background: url(https://kenteknots.com/wp-content/uploads/2025/11/Akan-Marriage-List-How-Akan-Traditional-Marriage-is-Performed-960x570.jpeg);
+  background-size: cover;
+  background-position: center;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;;
 }
+
 
 h1 {
   margin-bottom: 30px;
@@ -98,6 +101,18 @@ h1 {
   flex-direction: column;
   text-align: center;
   gap: 1.5rem;
+  position: relative;
+}
+
+#result {
+  font-weight: 400;
+  margin-top: 20px;
+  color: #000000;
+  border: 1px solid #FFD100;
+  padding: 15px 20px;
+  border-radius: 10px;
+  background: rgba(149, 149, 149, 0.726);
+  box-shadow: #029e1c 0px 0px 3px;
 }
 
 .home-button-container{
@@ -108,18 +123,18 @@ h1 {
 .home-button {
   display: inline-block;
   padding: 15px 40px;
-  border: 1px solid #FFD100;
+  border: 1px solid black;
   border-radius: 1000px;
   font-size: medium;
-  font-weight: 300;
+  font-weight: 500;
   text-align: center;
   text-decoration: none;
-  background-color: transparent;
-  color: #FFD100;
+  background-color: #8b82038c;
+  color: black;
 }
 
 .home-button:hover {
-  background-color: #FFD100;
+  background-color: #ffd000ae;
   color: black;
   transform: scale(1.05);
   transition: 0.2s;
