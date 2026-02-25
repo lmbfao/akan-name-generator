@@ -9,12 +9,12 @@ In Akan culture, commonly found in Ghana, children are traditionally named accor
 **Author:** Christine Karuga
 
 ## Contact Information
-**GitHub:** https://github.com/lmbfao
+**GitHub:** https://github.com/ckwangechi
 
 **Mailto:** christinewangechik@gmail.com
 
 ## Live Site
-[View the live site here](https://lmbfao.github.io/akan-name-generator/)
+[View the live site here](https://ckwangechi.github.io/akan-name-generator/)
 
 ## Setup Instructions
 To run this project locally:
